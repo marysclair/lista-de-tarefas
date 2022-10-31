@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    background-color: #08AEEA;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+}
+
+body::-webkit-scrollbar {
+    width: 15px;             /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;   
+    padding: 10px;   /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #08AEEA;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 5px solid white;
+  /* creates padding around scroll thumb */
+  }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 35vw;
+    border-radius: 15px;
+    background-color: #fdfdfde7;
+    min-height: 100vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#titulo {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+img {
+    margin-left: 30px;
+    cursor: pointer;
+    height: 10%;
+}
+#titulo > h1 {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    cursor: default;
+    color: #1c1c1c;
+    font-weight: 500;
+}
+
+#tarefa {
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid #ffffe1;
+    background-color: #FFFFF0;
+    padding: 5px 10px;
+    outline: none;
+    color: #1c1c1c;
+}
+#tarefa:focus{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#tarefas {
+    margin-top: 10%;
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    border-bottom: 1px solid #1c1c1c;
+    padding-bottom: 2px;
+}
+
+.checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 0.85rem;
+}
+.tarefa-nova {
+    color:#1c1c1c;
+    font-weight: 400;
+}
+
+.tarefa-feita {
+    color: rgb(70, 70, 70);
+    font-style: italic;
+    text-decoration:line-through;
+}
+
+#apagar {
+    margin-left: auto;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+    transition: .5s;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+img:hover {
+	-webkit-animation: rotate-scale-down 0.65s linear both;
+	        animation: rotate-scale-down 0.65s linear both;
+}
+#btn {
+    padding-top: 2%;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#btn:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+@-webkit-keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  

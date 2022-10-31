@@ -1,0 +1,11 @@
+@media (min-width: 300px) and (max-width: 650px) { 
+    #container {
+        width: 300px;
+    }
+    #titulo {
+        margin-top: 30px;
+    }
+    #titulo > h1 {
+        font-size: 1.5rem;
+    }
+}
